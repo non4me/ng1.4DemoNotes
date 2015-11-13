@@ -4,8 +4,9 @@ This project is generated with [yo angular generator](https://github.com/yeoman/
 version 0.14.0.
 
 ## Install
-1) Clone demo application from github `git clone https://github.com/non4me/ukazka.git && cd ukazka`
-2) Install dependencies `npm i && bower i` (Mac: `sudo npm i && bower i`)
+1. Clone demo application from github `git clone https://github.com/non4me/ukazka.git && cd ukazka`
+2. Install dependencies `npm i && bower i` (Mac: `sudo npm i && bower i`)
+3. Optional. If you have not installed compass module you need install it http://compass-style.org/install/
 
 ## Build & development
 Run `grunt` for building and `grunt serve` for preview.
