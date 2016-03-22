@@ -12,7 +12,7 @@ angular.module('demoApp').run(['$templateCache', function($templateCache) {
 
 
   $templateCache.put('scripts/directives/navigation/navigation.html',
-    "<div class=header><div class=\"navbar navbar-default\" role=navigation><div class=container><div class=navbar-header><button type=button class=\"navbar-toggle collapsed\" data-toggle=collapse data-target=#js-navbar-collapse><span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span></button> <a class=navbar-brand href=\"#/\">Demo</a></div><div class=\"collapse navbar-collapse\" id=js-navbar-collapse><ul class=\"nav navbar-nav\"><li ng-class=\"{ 'active' : page === '/'}\"><a href=\"\" ng-click=\"openPage('/')\">{{ 'notes' | translate }}</a></li><li ng-class=\"{ 'active' : page === '/contact'}\"><a href=\"\" ng-click=\"openPage('/contact')\">{{ 'contact' | translate }}</a></li></ul><lang-switcher></lang-switcher></div></div></div></div>"
+    "<div class=header><div class=\"navbar navbar-default\" role=navigation><div class=container><div class=navbar-header><button type=button class=\"navbar-toggle collapsed\" data-toggle=collapse data-target=#js-navbar-collapse><span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span></button> <a class=navbar-brand href=\"#/\">Demo</a></div><div class=\"collapse navbar-collapse\" id=js-navbar-collapse><lang-switcher></lang-switcher></div></div></div></div>"
   );
 
 
@@ -23,11 +23,6 @@ angular.module('demoApp').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('scripts/directives/note-list/note-list.html',
     "<div class=note-list><div class=\"btn btn-success add\" ng-click=showAddNewNote() ng-show=!isAddNew><span class=\"glyphicon glyphicon-plus-sign\" title=\"{{ 'add' | translate }}\"></span> {{ 'add' | translate }}</div><textarea class=new-note ng-model=newNote ng-show=isAddNew></textarea><div class=btn-group role=group ng-show=isAddNew><button type=button class=\"btn btn-warning left\" title=\"{{ 'cancel' | translate }}\" ng-click=hideAddNewNote()><span class=\"glyphicon glyphicon-remove\"></span></button> <button type=button class=\"btn btn-success right\" title=\"{{ 'add' | translate }}\" ng-click=addNewNote()><span class=\"glyphicon glyphicon-ok\"></span></button></div><note-element notes=notes note=note ng-repeat=\"note in notes | orderBy:'-id'\"></note-element><div class=dblclick><span class=\"glyphicon glyphicon-edit\"></span> {{ 'dblclick' | translate }}</div></div>"
-  );
-
-
-  $templateCache.put('views/contact.html',
-    "<div class=contact><div class=jumbotron><h2>{{ 'author' | translate }}</h2><p class=lead><img src=images/vt.png alt=\"I'm Yeoman\"><br><br>+420 776 883 655</p><p><a ng-href=mailto:vladimir@troyanenko.com>vladimir@troyanenko.com</a></p></div></div>"
   );
 
 

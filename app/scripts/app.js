@@ -10,7 +10,7 @@
  */
 angular
   .module('demoApp', [
-    'ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'pascalprecht.translate'
+    'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'pascalprecht.translate'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -18,11 +18,6 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
-      })
-      .when('/contact', {
-        templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl',
-        controllerAs: 'contact'
       })
       .otherwise({
         redirectTo: '/'
