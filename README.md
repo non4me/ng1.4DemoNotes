@@ -1,7 +1,5 @@
-# Demo application for BSC
+# Demo Notes
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.14.0.
 
 ## Install
 1. Clone demo application from github `git clone https://github.com/non4me/ukazka.git && cd ukazka`
