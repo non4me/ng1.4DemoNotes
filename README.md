@@ -12,4 +12,4 @@ Run `grunt` for building and `grunt serve` for preview.
 ## Testing
 Running `grunt test` will run the unit tests with karma.
 
-[Demo](http://non4me.github.io/ng2Demo-Notes/)
+[Demo](http://non4me.github.io/ng1.4DemoNotes/#/)
